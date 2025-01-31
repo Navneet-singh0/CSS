@@ -1,0 +1,84 @@
+body {
+    font-family: 'Font1', sans-serif;
+    background: url(../img/images.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    font-family: 'Font2', serif;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+    font-style: italic;
+}
+
+.lyrics {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    font-size: 1.3em;
+    line-height: 1.8;
+    font-family: 'Font2', serif;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    border-left: 5px solid #ffcc00;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lyrics:hover {
+    transform: scale(1.02);
+}
+
+.lyrics p {
+    margin: 10px 0;
+    text-indent: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.media {
+    margin: 30px auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+}
