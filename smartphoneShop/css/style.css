@@ -1,0 +1,247 @@
+/* General body and font styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;  /* Light off-white background */
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #6a1b9a, #ffca28); /* Purple and yellow gradient */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-family: 'Lora', serif;
+    font-size: 2.6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333; /* Darken the link color on hover */
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/3d-rendering-hexagonal-texture-background.jpg') center center/cover no-repeat; /* Background image */
+    color: white;
+    padding: 140px 20px;
+    text-align: center;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 4.2em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-btn {
+    background-color: #ffca28;
+    color: #6a1b9a;
+    padding: 18px 35px;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f4b600;  /* Slightly darker yellow */
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.featured-products h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #6a1b9a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.2em;
+    color: #ffca28;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card a {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card a:hover {
+    background-color: #5e1487;
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #ffca28;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-cards {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .cta-btn {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .cta-btn {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+}
